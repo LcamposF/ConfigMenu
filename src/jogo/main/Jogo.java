@@ -5,7 +5,7 @@ public class Jogo {
         // Antes de iniciar o jogo, mostramos o menu de configuração
         MenuConfiguracao.mostrarMenu();
 
-        // Agora podemos usar as configurações definidas no Singleton
+        // configurações definidas no Singleton
 
         Configuracao config = Configuracao.getInstance();
         System.out.println("\nConfigurações finais do jogo:");

@@ -47,4 +47,3 @@ public class Configuracao {
         this.modoJogo = modoJogo;
     }
 }
-

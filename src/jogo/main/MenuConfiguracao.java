@@ -26,7 +26,6 @@ public class MenuConfiguracao {
 
             switch (opcao) {
                 case 1:
-                    // Exibe as opções de dificuldade com números
                     System.out.println("Escolha a nova dificuldade:");
                     System.out.println("1. Fácil");
                     System.out.println("2. Médio");
@@ -34,9 +33,8 @@ public class MenuConfiguracao {
                     System.out.print("Digite a opção desejada: ");
 
                     int escolhaDificuldade = sc.nextInt();
-                    sc.nextLine(); // Consumir a quebra de linha
+                    sc.nextLine();
 
-                    // Define a dificuldade com base na opção numérica
                     switch (escolhaDificuldade) {
                         case 1:
                             config.setDificuldade("Fácil");
@@ -60,16 +58,15 @@ public class MenuConfiguracao {
                     break;
 
                 case 3:
-                    // Exibe as opções de modo de jogo com números
+
                     System.out.println("Escolha o modo de jogo:");
                     System.out.println("1. Dia");
                     System.out.println("2. Noite");
                     System.out.print("Digite a opção desejada: ");
 
                     int escolhaModo = sc.nextInt();
-                    sc.nextLine(); // Consumir a quebra de linha
+                    sc.nextLine();
 
-                    // Define o modo de jogo com base na opção numérica
                     switch (escolhaModo) {
                         case 1:
                             config.setModoJogo("Dia");
