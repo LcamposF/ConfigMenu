@@ -1,4 +1,5 @@
 package jogo.main;
+
 import java.util.Scanner;
 
 public class MenuConfiguracao {
@@ -21,13 +22,34 @@ public class MenuConfiguracao {
             System.out.print("Escolha uma opção: ");
 
             int opcao = sc.nextInt();
-            sc.nextLine();
+            sc.nextLine(); // Consumir a quebra de linha
 
             switch (opcao) {
                 case 1:
-                    System.out.println("Escolha a nova dificuldade (Fácil, Médio, Difícil): ");
-                    String dificuldade = sc.nextLine();
-                    config.setDificuldade(dificuldade);
+                    // Exibe as opções de dificuldade com números
+                    System.out.println("Escolha a nova dificuldade:");
+                    System.out.println("1. Fácil");
+                    System.out.println("2. Médio");
+                    System.out.println("3. Difícil");
+                    System.out.print("Digite a opção desejada: ");
+
+                    int escolhaDificuldade = sc.nextInt();
+                    sc.nextLine(); // Consumir a quebra de linha
+
+                    // Define a dificuldade com base na opção numérica
+                    switch (escolhaDificuldade) {
+                        case 1:
+                            config.setDificuldade("Fácil");
+                            break;
+                        case 2:
+                            config.setDificuldade("Médio");
+                            break;
+                        case 3:
+                            config.setDificuldade("Difícil");
+                            break;
+                        default:
+                            System.out.println("Opção inválida. Dificuldade não alterada.");
+                    }
                     break;
 
                 case 2:
@@ -38,9 +60,26 @@ public class MenuConfiguracao {
                     break;
 
                 case 3:
-                    System.out.print("Escolha o modo de jogo (Dia, Noite): ");
-                    String modo = sc.nextLine();
-                    config.setModoJogo(modo);
+                    // Exibe as opções de modo de jogo com números
+                    System.out.println("Escolha o modo de jogo:");
+                    System.out.println("1. Dia");
+                    System.out.println("2. Noite");
+                    System.out.print("Digite a opção desejada: ");
+
+                    int escolhaModo = sc.nextInt();
+                    sc.nextLine(); // Consumir a quebra de linha
+
+                    // Define o modo de jogo com base na opção numérica
+                    switch (escolhaModo) {
+                        case 1:
+                            config.setModoJogo("Dia");
+                            break;
+                        case 2:
+                            config.setModoJogo("Noite");
+                            break;
+                        default:
+                            System.out.println("Opção inválida. Modo de jogo não alterado.");
+                    }
                     break;
 
                 case 4:
@@ -57,4 +96,3 @@ public class MenuConfiguracao {
         mostrarMenu();
     }
 }
-
