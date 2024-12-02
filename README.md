@@ -47,3 +47,9 @@ O padrão Singleton é usado para garantir que todas as configurações do jogo 
 - **Garantia de Instância Única:** O padrão Singleton assegura que as configurações sejam armazenadas em uma única instância compartilhada, evitando inconsistências.
 - **Facilidade de Acesso:** As configurações podem ser acessadas de qualquer parte do programa sem a necessidade de criar novos objetos.
 - **Controle de Recursos:** Ao usar uma única instância, o uso de memória e recursos é otimizado.
+
+
+![1](https://github.com/user-attachments/assets/bb31465e-644a-4d79-9d66-fe6211dbffea)
+![3](https://github.com/user-attachments/assets/0ee1f138-f778-425b-8f7f-02d3dcd25611)
+![4](https://github.com/user-attachments/assets/8f3c5fff-b03e-4613-b1d5-d308fa377fb7)
+
